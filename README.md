@@ -28,9 +28,3 @@ A Django-based web application for managing a coffee shop. This project allows c
 - **Database:** SQLite (can be switched to PostgreSQL/MySQL)  
 
 ---
-
-## Installation  
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/your-username/coffee-shop.git
-   cd coffee-shop
