@@ -4,7 +4,10 @@ A Django-based web application for managing a coffee shop. This project allows c
 
 ---
 
-## Features  
+
+  ![Screenshot 2025-01-27 194848](https://github.com/user-attachments/assets/8aa3b3ee-a508-4670-a52a-f5395b109a7a)
+## Features
+
 ### For Customers:
 - Browse the coffee shop menu.
 - Place orders online.
@@ -16,6 +19,8 @@ A Django-based web application for managing a coffee shop. This project allows c
 - Track daily sales reports.  
 
 ---
+![Screenshot 2025-01-27 194904](https://github.com/user-attachments/assets/5a11e4b5-3163-424f-bb74-12d12a36e500)
+
 
 ## Technologies Used  
 - **Frontend:** HTML, CSS, Bootstrap/Tailwind CSS  
