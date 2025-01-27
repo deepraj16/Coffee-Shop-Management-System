@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block title %}
+Home Page
+{% endblock title %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative h-screen bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Welcome to Coffee Haven</h1>
+        <p class="text-lg md:text-xl mb-6">
+            Your favorite coffee shop where every cup is crafted with love.
+        </p>
+        <a href="{% url 'all_chai' %}" class="bg-yellow-600 px-8 py-3 text-lg rounded-lg shadow-lg hover:bg-yellow-700 transition">
+            Explore Our Menu
+        </a>
+    </div>
+</section>
+
+<!-- Menu Highlights -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-8">Our Specialties</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Menu Item 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1558611848-73f7eb40047c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Espresso" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Rich Espresso</h3>
+                    <p class="text-gray-600">Experience the bold flavors of our freshly brewed espresso.</p>
+                </div>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Chai Latte" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Creamy Chai Latte</h3>
+                    <p class="text-gray-600">Indulge in the creamy and spicy goodness of our chai latte.</p>
+                </div>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1598887142481-34c05518b6f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600" alt="Cold Brew" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Refreshing Cold Brew</h3>
+                    <p class="text-gray-600">Cool off with our smooth and refreshing cold brew coffee.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="#" class="hover:text-yellow-400">Facebook</a>
+            <a href="#" class="hover:text-yellow-400">Instagram</a>
+            <a href="#" class="hover:text-yellow-400">Twitter</a>
+        </div>
+    </div>
+</footer>
+{% endblock content %}

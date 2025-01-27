@@ -1,0 +1,50 @@
+{% load static tailwind_tags %}
+{% load static %} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}
+        Default Value
+    {% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% tailwind_css %}
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-800 text-white">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <!-- Logo -->
+            <a href="/" class="text-2xl font-bold hover:text-yellow-400">
+                Coffee Shop
+            </a>
+            <!-- Links -->
+            <ul class="flex space-x-6">
+                <li>
+                    <a href="/" class="hover:text-yellow-400 transition">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'all_chai' %}" class="hover:text-yellow-400 transition">Menu</a>
+                </li>
+                <li>
+                    <a href="/about" class="hover:text-yellow-400 transition">About Us</a>
+                </li>
+                <li>
+                    <a href="/contact" class="hover:text-yellow-400 transition">Contact</a>
+                </li>
+            </ul>
+            <!-- CTA Button -->
+            <a href="/order" class="bg-yellow-600 px-4 py-2 rounded-lg hover:bg-yellow-700 transition">
+                Order Now
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block title %}
+About Us
+{% endblock title %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative bg-cover bg-center h-96" style="background-image: url('https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+        <h1 class="text-5xl font-extrabold mb-4">About Coffee Haven</h1>
+        <p class="text-lg">
+            Where passion for coffee meets community spirit. Learn more about us!
+        </p>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Text Content -->
+            <div class="flex-1">
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Story</h2>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Coffee Haven started as a dream to create a welcoming space for coffee lovers. From humble beginnings, 
+                    we've grown into a vibrant hub where people come together to share moments over expertly brewed coffee 
+                    and delicious treats. We source the finest beans and ingredients, ensuring every cup tells its own story.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Whether you're here to work, catch up with friends, or simply relax, we’re here to serve you the best experience.
+                </p>
+            </div>
+            <!-- Image -->
+            <div class="flex-1">
+                <img 
+                    src="https://images.pexels.com/photos/1666067/pexels-photo-1666067.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" 
+                    alt="Coffee Shop Interior" 
+                    class="rounded-lg shadow-lg"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold text-gray-800 mb-6">Visit Us</h2>
+        <p class="text-gray-600 mb-8">
+            Find us at the heart of the city. We'd love to welcome you in person.
+        </p>
+        <div class="relative w-full h-96 rounded-lg overflow-hidden shadow-lg">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093747!2d144.9537363153179!3d-37.81627977975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577c4b083aef117!2sCoffee%20Shop!5e0!3m2!1sen!2sus!4v1602008278439!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto text-center">
+        <p>&copy; 2024 Coffee Haven. All rights reserved.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+            <a href="#" class="hover:text-yellow-400">Facebook</a>
+            <a href="#" class="hover:text-yellow-400">Instagram</a>
+            <a href="#" class="hover:text-yellow-400">Twitter</a>
+        </div>
+    </div>
+</footer>
+{% endblock content %}
