@@ -27,4 +27,4 @@ A Django-based web application for managing a coffee shop. This project allows c
 - **Backend:** Django (Python)  
 - **Database:** SQLite (can be switched to PostgreSQL/MySQL)  
 
----
+----
